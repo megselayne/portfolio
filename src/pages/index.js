@@ -1,5 +1,13 @@
 import React from "react"
-
-export default function Home() {
-  return <div>Hello world!</div>
+import NavBar from './nav';
+import { Route, Redirect } from 'react-router-dom';
+export default function Index() {
+  return(
+    <div className='main'>
+      <NavBar />
+      <div className='splash'>
+        Home Test
+      </div>
+    </div>
+  ) 
 }
