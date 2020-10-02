@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from './nav';
+import Footer from './footer';
 import upreadsImg from '../assets/upreads.png'
 import covidTrackerImg from '../assets/covidTracker.png'
 import betaBouldersImg from '../assets/betaBoulders.png'
@@ -44,6 +45,7 @@ const Projects = () => {
         </div>
        </div>
       </div>
+      <Footer />
       </div>
     </div>
     )

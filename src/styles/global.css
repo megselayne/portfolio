@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 h3{
     color: white; 
+    font-size: 1.5em;
 }
 .main{
     height: 100vh;
@@ -45,10 +48,18 @@ nav a{
     color: white;
 }
 
+nav a:hover{
+    color: #0071e3;
+}
+
+.active{
+    border-bottom: 3px solid #0071e3;
+}
+
 .project-link{
     font-size: 1.2em;
     text-decoration: none;
-    color: #2ec4b6;
+    color: #0071e3;
     margin-right: 10px;
 }
 
@@ -60,10 +71,11 @@ nav a{
 }
 
 .project{
-    width: 35vw;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
 }
 
 .row{
@@ -73,4 +85,14 @@ nav a{
 .project-img{
     height: 250px;
     width: 300px;
+}
+
+footer{
+    height: 50px;
+}
+
+@media (max-width:960px) {
+    .project-grid{
+        width: 40vw;
+    }
 }

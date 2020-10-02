@@ -1,13 +1,14 @@
 import React from "react"
 import NavBar from './nav';
-import { Route, Redirect } from 'react-router-dom';
+import Footer from './footer';
 export default function Index() {
   return(
     <div className='main'>
       <NavBar />
-      <div className='splash'>
+      <div className='container'>
         Home Test
       </div>
+      <Footer />
     </div>
   ) 
 }
