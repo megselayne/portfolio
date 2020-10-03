@@ -60,7 +60,6 @@ nav a:hover{
     font-size: 1.2em;
     text-decoration: none;
     color: #0071e3;
-    margin-right: 10px;
 }
 
 .project-grid{
@@ -71,15 +70,22 @@ nav a:hover{
 }
 
 .project{
-    width: 30vw;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
     margin: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 28px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 28px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 28px -8px rgba(0,0,0,0.75);
 }
 
 .row{
     display: flex;
+    width: 250px;
+    justify-content: space-around;
 }
 
 .project-img{
@@ -92,7 +98,21 @@ footer{
 }
 
 @media (max-width:960px) {
+    nav a{
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
     .project-grid{
         width: 40vw;
+    }
+    .project-img{
+        height: 150px;
+        width: 200px;
+    }
+
+    .project{
+        width: 250px;
     }
 }

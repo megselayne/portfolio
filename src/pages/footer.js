@@ -1,5 +1,4 @@
 import React from 'react'
-import navScript from '../scripts/navHighlight';
 
 const Footer = () => {
     return (
@@ -11,4 +10,3 @@ const Footer = () => {
 }
 export default Footer;
 
-{/* <script src={navScript} /> */}
