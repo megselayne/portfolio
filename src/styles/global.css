@@ -83,7 +83,7 @@ nav a:hover{
     background-image: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?cs=srgb&dl=pexels-jakub-novacek-924824.jpg&fm=jpg');
     background-size: cover;
     width: 100vw;
-    padding: 2em;
+    padding-bottom: 2em;
 
 }
 .stack-section{
@@ -106,7 +106,7 @@ nav a:hover{
     font-size: 6em;
 }
 .about{
-    max-width: 60vw;
+    max-width: 40vw;
     color: white;
     font-size: 1.5em;
 }
@@ -179,6 +179,7 @@ footer{
 
 @media (max-width:700px) {
     .nav-container{
+        width: 100vw;
         height: 30vh;
     }
     h1{
@@ -186,15 +187,13 @@ footer{
     }
     h3{
         font-size: 1.3em;
+        margin-bottom: 5px;
     }
     nav a{
         font-size: 1.2em;
         font-weight: bold;
         text-decoration: none;
         color: white;
-    }
-    .splash{
-        height: 80vh;
     }
     .about{
         max-width: 80vw;
@@ -205,11 +204,14 @@ footer{
         justify-content: center;
     }
     .stack-icon{
-        font-size: 2.5em;
+        font-size: 40px;
     }
     .project-img{
         height: 150px;
         width: 200px;
+    }
+    .project-grid{
+        flex-shrink: 1;
     }
     .project{
         width: 250px;
