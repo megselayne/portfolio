@@ -179,7 +179,7 @@ footer{
 
 @media (max-width:700px) {
     .nav-container{
-        height: 12vh;
+        height: 30vh;
     }
     h1{
         font-size: 2em;
@@ -194,7 +194,7 @@ footer{
         color: white;
     }
     .splash{
-        flex-grow: 1;
+        height: 80vh;
     }
     .about{
         max-width: 80vw;
@@ -205,7 +205,7 @@ footer{
         justify-content: center;
     }
     .stack-icon{
-        font-size: 2em;
+        font-size: 2.5em;
     }
     .project-img{
         height: 150px;
