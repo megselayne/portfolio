@@ -92,7 +92,7 @@ nav a:hover{
     align-items: center;
     background-color: #fbfbfd;
     width: 100vw;
-    padding: 2em;
+    padding-bottom: 2em;
 }
 .width{
     display:flex;
@@ -204,7 +204,7 @@ footer{
         justify-content: center;
     }
     .stack-icon{
-        font-size: 40px;
+        font-size: 3em;
     }
     .project-img{
         height: 150px;
@@ -223,5 +223,14 @@ footer{
     .proj-row{
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+@media (max-width:500px) {
+    .stack-icon{
+        font-size: 5em;
+    }
+    .splash{
+        height: 90vh;
     }
 }
