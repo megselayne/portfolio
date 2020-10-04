@@ -1,23 +1,52 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css");
+html, body{
     margin: 0;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    color: white;
+    font-size: 4em;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 0;
+}
+h3{
+    color: white; 
+    font-size: 1.5em;
 }
 .main{
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #30343a;
 }
-.splash{
-    height: 80vh;
-    background-color: #30343a;
+
+.container{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    align-items: center;
+    flex-grow:1;
+    width: 60vw;
+}
+.home{
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: 3px solid #0071e3;
+}
+
+.nav-container{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #30343a;
+    height: 8vh;
 }
 nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     width: 90vw;
 }
 .navlinks{
@@ -32,24 +61,153 @@ nav ul{
 nav li{
     margin: 7px;
 }
-
 nav a{
-    font-size: 1.1em;
+    font-size: 1.5em;
+    font-weight: bold;
     text-decoration: none;
-    color: #2ec4b6;
+    color: white;
+}
+
+nav a:hover{
+    color: #0071e3;
+}
+
+.active{
+    border-bottom: 3px solid #0071e3;
+}
+
+.splash{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?cs=srgb&dl=pexels-jakub-novacek-924824.jpg&fm=jpg');
+    background-size: cover;
+    width: 100vw;
+    padding: 2em;
+
+}
+.stack-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbfbfd;
+    width: 100vw;
+    padding: 2em;
+}
+.width{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fbfbfd;
+    width: 80vw;
+}
+.stack-icon{
+    color: #000;
+    font-size: 6em;
+}
+.about{
+    max-width: 30vw;
+    color: white;
+    font-size: 1.5em;
+}
+
+.soc-icon{
+   color: #0071e3;
+}
+
+.project-link{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #0071e3;
 }
 
 .project-grid{
+    background-color: #fbfbfd;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 60vw;
+    flex-grow:1;
+    width: 100vw;
+    padding-bottom: 4em;
 }
 
 .project{
-    width: 25vw;
+    background-color: #fbfbfd;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 28px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 28px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 28px -8px rgba(0,0,0,0.75);
 }
 
 .row{
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.proj-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proj-row{
+    display: flex;
+}
+
+
+.proj-bullet{
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.project-img{
+    height: 250px;
+    width: 300px;
+}
+
+footer{
+    padding: 2em;
+    background-color: #30343a;
+    width: 100vw;
+    text-align: center;
+}
+
+@media (max-width:700px) {
+    h1{
+        font-size: 2.5em;
+    }
+    nav a{
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    .about{
+        max-width: 60vw;
+        text-align: center;
+    }
+    .proj-wrapper{
+        justify-content: center;
+    }
+    .stack-icon{
+        font-size: 4em;
+    }
+    .project-img{
+        height: 150px;
+        width: 200px;
+    }
+
+    .project{
+        width: 300px;
+        align-items: center;
+    }
+    .proj-row{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
