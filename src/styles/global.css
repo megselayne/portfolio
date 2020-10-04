@@ -83,7 +83,7 @@ nav a:hover{
     background-image: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?cs=srgb&dl=pexels-jakub-novacek-924824.jpg&fm=jpg');
     background-size: cover;
     width: 100vw;
-    padding: 2em;
+    padding-bottom: 2em;
 
 }
 .stack-section{
@@ -209,6 +209,9 @@ footer{
     .project-img{
         height: 150px;
         width: 200px;
+    }
+    .project-grid{
+        flex-shrink: 1;
     }
     .project{
         width: 250px;
