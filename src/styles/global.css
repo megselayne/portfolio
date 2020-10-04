@@ -186,15 +186,13 @@ footer{
     }
     h3{
         font-size: 1.3em;
+        margin-bottom: 5px;
     }
     nav a{
         font-size: 1.2em;
         font-weight: bold;
         text-decoration: none;
         color: white;
-    }
-    .splash{
-        height: 80vh;
     }
     .about{
         max-width: 80vw;
