@@ -201,10 +201,10 @@ footer{
         color: white;
     }
     .splash{
-        flex-grow: 1;
+        height: 80vh;
     }
-    .stack-section{
-        flex-grow: 1;
+    .stacks-section{
+        height: 20vh;
     }
     .about{
         max-width: 80vw;
