@@ -57,6 +57,7 @@ export default function Index() {
           </div>
         </div>
         {/* Projects */}
+        <div className='col'>
         <div className='project-grid' id='project-section'>
           <div className='width'>
           <h2>Projects</h2>
@@ -113,7 +114,8 @@ export default function Index() {
                 <a className='project-link' href='https://github.com/megselayne/pokeBattle' rel="noopener noreferrer" target='_blank'>Github</a>
             </div>
           </div>
-
+          </div>
+          
           </div>
         </div>
         </div>

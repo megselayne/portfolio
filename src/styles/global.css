@@ -30,6 +30,11 @@ h3{
     flex-grow:1;
     width: 60vw;
 }
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .home{
     font-family: 'Orbitron', sans-serif;
     border-bottom: 3px solid #0071e3;
@@ -195,6 +200,12 @@ footer{
         text-decoration: none;
         color: white;
     }
+    .splash{
+        flex-grow: 1;
+    }
+    .stack-section{
+        flex-grow: 1;
+    }
     .about{
         max-width: 80vw;
         font-size: 1.4em;
@@ -211,7 +222,7 @@ footer{
         width: 200px;
     }
     .project-grid{
-        flex-shrink: 1;
+        flex-shrink: 2;
     }
     .project{
         width: 250px;
@@ -228,9 +239,7 @@ footer{
 
 @media (max-width:500px) {
     .stack-icon{
-        font-size: 5em;
+        font-size: 4em;
     }
-    .splash{
-        height: 90vh;
-    }
+
 }
