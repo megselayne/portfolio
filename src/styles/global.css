@@ -5,6 +5,7 @@ html, body{
     margin: 0;
     /* font-family: 'Orbitron', sans-serif; */
     font-family: 'Roboto', sans-serif;
+    background-color: #fbfbfd;
 }
 h1{
     color: white;
@@ -12,12 +13,14 @@ h1{
     font-family: 'Orbitron', sans-serif;
     margin-bottom: 0;
 }
+h2{
+    font-size: 2em;
+}
 h3{
     color: white; 
     font-size: 1.5em;
 }
 .main{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,12 +31,13 @@ h3{
     flex-direction: column;
     align-items: center;
     flex-grow:1;
-    width: 60vw;
+    width: 80vw;
 }
 .col{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    width: 80vw;
 }
 .home{
     font-family: 'Orbitron', sans-serif;
@@ -46,7 +50,6 @@ h3{
     justify-content: center;
     align-items: center;
     background-color: #30343a;
-    height: 8vh;
 }
 nav{
     display: flex;
@@ -94,16 +97,23 @@ nav a:hover{
 .stack-section{
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background-color: #fbfbfd;
-    width: 100vw;
+    width: 80vw;
     padding-bottom: 2em;
 }
-.width{
+/* .width{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
     background-color: #fbfbfd;
+    width: 80vw;
+} */
+
+.stack-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 80vw;
 }
 .stack-icon{
@@ -129,10 +139,10 @@ nav a:hover{
 .project-grid{
     background-color: #fbfbfd;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     flex-grow:1;
-    width: 100vw;
+    width: 80vw;
     padding-bottom: 4em;
 }
 
@@ -158,6 +168,7 @@ nav a:hover{
 .proj-wrapper{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .proj-row{
@@ -183,10 +194,10 @@ footer{
 }
 
 @media (max-width:700px) {
-    .nav-container{
+    /* .nav-container{
         width: 100vw;
         height: 30vh;
-    }
+    } */
     h1{
         font-size: 2em;
     }
@@ -200,19 +211,20 @@ footer{
         text-decoration: none;
         color: white;
     }
-    .splash{
-        height: 350px;
-    }
-    .stacks-section{
-        height: 200px;
+    .stack-section{
+        align-items: center;
     }
     .about{
         max-width: 80vw;
         font-size: 1.4em;
         text-align: center;
     }
+    .col{
+        align-items: center;
+    }
     .proj-wrapper{
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     .stack-icon{
         font-size: 3em;
@@ -237,9 +249,9 @@ footer{
     }
 }
 
-@media (max-width:500px) {
+/* @media (max-width:500px) {
     .stack-icon{
         font-size: 4em;
     }
 
-}
+} */
