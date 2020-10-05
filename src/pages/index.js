@@ -14,8 +14,7 @@ import Resume from '../assets/megan_lee_resume.pdf'
 export default function Index() {
   return(
     <div className='main'>
-      <NavBar />
-      <div className='container'>
+        <NavBar />
         <div className='splash'>
           <h1>Developed by Lee</h1>
           <h3>Fullstack Software Engineer</h3>
@@ -37,11 +36,11 @@ export default function Index() {
             </a>
           </div>
         </div>
+        <div className='container'>
         {/* Tech Stacks */}
         <div className='stack-section' id='stack-section'>
-          <div className='width'>
-            <h2>Stacks</h2>
-            <div className='row'>
+            <h2>STACKS</h2>
+            <div className='stack-row'>
               <i className="devicon-html5-plain-wordmark stack-icon"></i>
               <i className="devicon-css3-plain-wordmark stack-icon"></i>
               <i className="devicon-javascript-plain stack-icon"></i>
@@ -54,14 +53,13 @@ export default function Index() {
               <i className="devicon-npm-original-wordmark stack-icon"></i>
               <i className="devicon-yarn-plain-wordmark stack-icon"></i>
             </div>
-          </div>
         </div>
         {/* Projects */}
         <div className='col'>
-        <div className='project-grid' id='project-section'>
-          <div className='width'>
-          <h2>Projects</h2>
+
+          <h2>PROJECTS</h2>
           <div className='proj-wrapper'>
+            
             <div className='project'>
               <h2>UpReads</h2>
                 <a className='project-link' href='https://upreads.herokuapp.com' rel="noopener noreferrer" target='_blank'><img className='project-img' src={upreadsImg} alt='UpReads'/></a> 
@@ -114,10 +112,8 @@ export default function Index() {
                 <a className='project-link' href='https://github.com/megselayne/pokeBattle' rel="noopener noreferrer" target='_blank'>Github</a>
             </div>
           </div>
+
           </div>
-          
-          </div>
-        </div>
         </div>
       </div>
     </div>
