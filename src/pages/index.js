@@ -55,7 +55,7 @@ export default function Index() {
             </div>
         </div>
         {/* Projects */}
-        <div className='col'>
+        <div className='col' id='project-section'>
 
           <h2>PROJECTS</h2>
           <div className='proj-wrapper'>
