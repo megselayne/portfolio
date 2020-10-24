@@ -1,5 +1,6 @@
 import React from "react"
-import NavBar from './nav';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigation from './nav';
 import Footer from './footer';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -14,7 +15,7 @@ import Resume from '../assets/megan_lee_resume.pdf'
 export default function Index() {
   return(
     <div className='main'>
-        <NavBar />
+        <Navigation />
         <div className='splash'>
           <h1>Developed by Lee</h1>
           <h3>Fullstack Software Engineer</h3>

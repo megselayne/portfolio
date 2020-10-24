@@ -51,9 +51,9 @@ h3{
     align-items: center;
     background-color: #30343a;
 }
-nav{
+.nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 90vw;
 }
@@ -195,10 +195,10 @@ footer{
 }
 
 @media (max-width:700px) {
-    /* .nav-container{
-        width: 100vw;
-        height: 30vh;
-    } */
+    .navlinks{
+        display: flex;
+        flex-direction: column;
+    }
     h1{
         font-size: 2em;
     }
